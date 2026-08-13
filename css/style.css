@@ -8,9 +8,36 @@ body {
     text-decoration: none;
     background-color: #fff;
 }
-.gender{
+
+.gender {
     padding-top: 36px;
 }
+
 .gender .form-check-input[type=checkbox] {
-    border-radius:50%;
+    border-radius: 50%;
 }
+.fs-20{
+    font-size: 20px;
+    color: #000;
+}
+.bg-section{
+    background-color: #3333;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #3333;
+    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #3333;
+}
+
+.gender-class.form-check-input[type=checkbox] {
+    border-radius: 4.25em;
+}
+
+input:focus, button:focus{
+    box-shadow: unset !important;
+} 

@@ -6,127 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Filter</title>
 </head>
 
 <body>
-    <!-- Header text section -->
-    <section>
+
+    <!-- filter accordion start here-->
+    <section class="header">
         <div class="container">
-            <h4>Filter</h4>
+            <div class="row">
+                <div class="col-md-3 bg-section">
+
+                    <!-- heading start -->
+                    <h4>Filter</h4>
+                    <!-- heading close -->
+
+                    <div id="filterAccordion">
+                        <div class="mb-3">
+                            <!-- Brand section start here-->
+                            <button class="btn w-100 d-flex justify-content-between align-items-center bg-light p-3"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#brandFilter">
+                                <span class="fs-20 fw-normal">Brand</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <div class="collapse show" id="brandFilter" data-bs-parent="#filterAccordion">
+                                <div class="list-group mt-3">
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        Nike
+                                    </label>
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        Adidas
+                                    </label>
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        Asics
+                                    </label>
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        Puma
+                                    </label>
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        Bata
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Brand section start here-->
+
+                        <!-- Gender section start here -->
+                        <div class="mb-3">
+                            <button class="btn w-100 d-flex justify-content-between align-items-center bg-light p-3"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#genderFilter">
+                                <span class="fs-20 fw-normal">Gender</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <div class="collapse" id="genderFilter" data-bs-parent="#filterAccordion">
+                                <div class="list-group mt-3">
+                                    <!--  -->
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input gender-radio me-2" type="radio" name="gender">
+                                        Male
+                                    </label>
+                                    <label class="fs-20 list-group-item border-0">
+                                        <input class="form-check-input gender-radio me-2" type="radio" name="gender">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Gender section start here -->
+
+                    <!-- Price section start here -->
+                    <div class="mb-3">
+                        <button class="btn w-100 d-flex justify-content-between align-items-center bg-light p-3"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#priceFilter"> <span
+                                class="fs-20 fw-normal">Price</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div class="collapse" id="priceFilter" data-bs-parent="#filterAccordion">
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <select class="fs-20 form-select">
+                                        <option selected>Min</option>
+                                        <option>₹500</option>
+                                        <option>₹1000</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select class="fs-20 form-select">
+                                        <option selected>Max</option>
+                                        <option>₹5000</option>
+                                        <option>₹10000</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Price section close here -->
+                </div>
+                <!-- images section start here -->
+                <div class="col-md-9">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt=" shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                        </div>
+                    </div>
+                </div>
+                <!-- images section close  here -->
+            </div>
+
+
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
 
-    <!-- Brand section start here -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                        <span>Brand</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                </div>
-                <div class="list-group mt-3">
 
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Nike
-                    </label>
 
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Adidas
-                    </label>
 
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Asics
-                    </label>
-
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Puma
-                    </label>
-
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Bata
-                    </label>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Brand section close here -->
-
-    <!--Gender section start here-->
-    <section class="gender">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                        <span>Gender</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                </div>
-                <div class="list-group mt-3">
-
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Male
-                    </label>
-
-                    <label class="list-group-item border-0">
-                        <input class="form-check-input me-2" type="checkbox">
-                        Female
-                    </label>
-
-                </div>
-            </div>
-    </section>
-    <!--Gender section close here-->
-
-    <!--  -->
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex justify-content-between align-items-center bg-light p-3">
-                        <span class="fs-4">Price</span>
-                        <i class="fa-solid fa-angle-down fs-4"></i>
-                    </div>
-
-                    <div class="row mt-4">
-
-                        <div class="col-6">
-                            <select class="form-select">
-                                <option selected>Min</option>
-                                <option>₹500</option>
-                                <option>₹1000</option>
-                            </select>
-                        </div>
-
-                        <div class="col-6">
-                            <select class="form-select">
-                                <option selected>Max</option>
-                                <option>₹5000</option>
-                                <option>₹10000</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                </div>
-
-    </section>
+    <!-- filter accordion close here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
