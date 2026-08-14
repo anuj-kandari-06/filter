@@ -83,67 +83,91 @@
                     <!-- Gender section start here -->
 
                     <!-- Price section start here -->
-                    <div class="mb-3">
-                        <button class="btn w-100 d-flex justify-content-between align-items-center bg-light p-3"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#priceFilter"> <span
-                                class="fs-20 fw-normal">Price</span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="collapse" id="priceFilter" data-bs-parent="#filterAccordion">
-                            <div class="row mt-4">
-                                <div class="col-6">
-                                    <select class="fs-20 form-select">
-                                        <option selected>Min</option>
-                                        <option>₹500</option>
-                                        <option>₹1000</option>
-                                    </select>
+                    <div class="mt-3">
+
+                        <!-- Price Header -->
+                        <div class="mb-3">
+                            <!-- Price Header -->
+                            <button class="btn w-100 d-flex justify-content-between align-items-center bg-light p-3"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#priceFilter"
+                                aria-expanded="false" aria-controls="priceFilter">
+
+                                <span class="fs-20 fw-normal">Price range</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+
+                            <!-- Price Filter Content -->
+                            <div class="collapse" id="priceFilter" data-bs-parent="#filterAccordion">
+
+                                <!-- Range Slider -->
+                                <input type="range" class="form-range mt-3" min="500" max="10000" step="100" value="500"
+                                    id="customRange2">
+
+                                <!-- Price Values -->
+                                <div class="d-flex justify-content-between">
+                                    <span>₹500</span>
+                                    <span id="priceValue">₹500</span>
                                 </div>
-                                <div class="col-6">
-                                    <select class="fs-20 form-select">
-                                        <option selected>Max</option>
-                                        <option>₹5000</option>
-                                        <option>₹10000</option>
-                                    </select>
+
+                                <!-- Min Max -->
+                                <div class="row mt-4">
+                                    <div class="col-6">
+                                        <select class="fs-20 form-select">
+                                            <option selected>Min</option>
+                                            <option>₹500</option>
+                                            <option>₹1000</option>
+                                            <option>₹2000</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <select class="fs-20 form-select">
+                                            <option selected>Max</option>
+                                            <option>₹5000</option>
+                                            <option>₹10000</option>
+                                        </select>
+                                    </div>
                                 </div>
+
+                            </div>
+                        </div>
+                        <!-- Price section close here -->
+                    </div>
+                    </div>
+                    <!-- images section start here -->
+                    <div class="col-md-9">
+                        <div class="row g-4">
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt=" shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
                             </div>
                         </div>
                     </div>
-                    <!-- Price section close here -->
-                </div>
-                <!-- images section start here -->
-                <div class="col-md-9">
-                    <div class="row g-4">
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt=" shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <img src="images/shose-img.png" class="img-fluid w-100" alt="shose product">
-                        </div>
-                    </div>
-                </div>
-                <!-- images section close  here -->
+                    <!-- images section close  here -->
+                
+
+
             </div>
-
-
-        </div>
         </div>
         </div>
         </div>
@@ -155,6 +179,7 @@
 
     <!-- filter accordion close here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
